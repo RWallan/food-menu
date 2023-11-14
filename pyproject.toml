@@ -10,8 +10,9 @@ python = "3.11.*"
 fastapi = "^0.104.1"
 uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
 reactpy = "^1.0.2"
-pyscopg2 = "^66.0.2"
 httpx = "^0.25.1"
+pydantic-settings = "^2.1.0"
+alembic = "^1.12.1"
 
 
 [tool.poetry.group.dev.dependencies]
