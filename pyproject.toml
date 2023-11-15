@@ -45,3 +45,5 @@ exclude = [".venv", "migrations"]
 lint = "ruff . && black --check . && isort . --diff"
 format = "black . && isort ."
 backend = "uvicorn src.app:app --reload --port 8000"
+pre_test_backend = "task lint"
+test_backend = "pytest -s -x --cov=src -vv"
